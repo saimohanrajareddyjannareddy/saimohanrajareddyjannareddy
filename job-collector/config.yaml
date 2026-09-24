@@ -1,0 +1,135 @@
+# Job collector config. Paths are relative to this file.
+
+# Point this at your real resume (.pdf, .docx, .txt, .md). Keep it out of git:
+# resumes/ is gitignored. The sample profile is built from your GitHub README.
+resume_path: sample_profile.md
+
+profile:
+  years_experience: 1          # used to down-rank "7+ years" postings
+  target_titles:               # substring match on the job title = full title score
+    - AI Engineer
+    - ML Engineer
+    - Machine Learning Engineer
+    - LLM Engineer
+    - GenAI Engineer
+    - Generative AI Engineer
+    - Applied AI
+    - AI/ML Engineer
+    - Applied Machine Learning
+    - AI Software Engineer
+    - Software Engineer, AI
+    - Software Engineer - AI
+    - Software Engineer, Machine Learning
+    - Forward Deployed Engineer
+    - Agent Engineer
+  related_title_words: [ai, ml, llm, genai, machine learning, agent, agents, applied, nlp, rag, data, platform, backend, software engineer, python]
+  penalize_title_words: [senior, sr, lead]          # soft penalty, not excluded
+  core_skills: [LLMs, RAG, AI Agents, Python, LLM Evaluation, OpenAI API, Anthropic / Claude]
+  extra_skills: []             # skills the resume parser misses, e.g. ["Kubernetes"]
+
+filters:
+  sponsorship: h1b             # any | h1b | strict   (see README)
+  min_score: 35
+  us_only: true
+  exclude_title_words: [principal, staff, director, head, vp, manager, intern, internship, recruiter, sales, account executive, clearance, "ts/sci"]
+  require_title_any: []        # e.g. [ai, ml, machine learning, llm] to hard-require these in the title
+  exclude_companies: []
+
+# Search terms for keyword-driven sources (Remotive, JSearch, Adzuna, JobSpy).
+search_queries:
+  - AI Engineer
+  - Machine Learning Engineer
+  - LLM Engineer
+  - Generative AI Engineer
+
+sources: [greenhouse, lever, ashby, remotive, remoteok, themuse, hackernews]
+# Add jsearch / adzuna once you set their API keys (LinkedIn/Indeed/Glassdoor coverage).
+# jobspy scrapes those sites directly; it breaks their ToS, so it's opt-in only.
+
+source_options:
+  jsearch: {location: United States}
+  jobspy: {location: United States, results: 50}
+  themuse: {pages: 3}
+
+h1b_sponsor_files:
+  - data/h1b_sponsors.txt
+  # - data/uscis_h1b_employers.csv   # optional: USCIS H-1B Employer Data Hub export
+
+# Company career boards polled directly. Slugs come from the board URL:
+#   boards.greenhouse.io/<slug>   jobs.lever.co/<slug>   jobs.ashbyhq.com/<slug>
+# Wrong slugs just show as "skipped (404)" in -v output; fix or delete them.
+companies:
+  greenhouse:
+    - anthropic
+    - databricks
+    - scaleai
+    - stripe
+    - airbnb
+    - figma
+    - robinhood
+    - discord
+    - datadog
+    - cloudflare
+    - gitlab
+    - instacart
+    - pinterest
+    - lyft
+    - dropbox
+    - asana
+    - brex
+    - samsara
+    - mongodb
+    - elastic
+    - twilio
+    - affirm
+    - gusto
+    - coinbase
+    - reddit
+    - roblox
+    - duolingo
+    - okta
+    - pagerduty
+    - togetherai
+    - gleanwork
+    - snorkelai
+    - cerebrassystems
+    - nuro
+    - flexport
+    - chime
+    - toast
+    - doordashusa
+    - airtable
+    - grammarly
+    - verkada
+    - calendly
+  lever:
+    - palantir
+    - plaid
+    - mistral
+    - spotify
+    - zoox
+    - whoop
+    - attentive
+    - wealthfront
+    - veeva
+  ashby:
+    - openai
+    - cohere
+    - ramp
+    - linear
+    - notion
+    - replit
+    - harvey
+    - elevenlabs
+    - langchain
+    - modal
+    - anysphere
+    - perplexity
+    - pinecone
+    - supabase
+    - vercel
+    - deepgram
+    - sierra
+    - baseten
+    - writer
+    - hebbia

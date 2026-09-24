@@ -1,0 +1,105 @@
+# Employers with a track record of filing H-1B petitions.
+# This is a starter list, not authoritative, and a company filing H-1Bs
+# does not mean every role at it will sponsor. For real coverage, download
+# the USCIS H-1B Employer Data Hub CSV (uscis.gov/tools/reports-and-studies/
+# h-1b-employer-data-hub) and add it under h1b_sponsor_files in config.yaml.
+# One employer per line; "Inc", "LLC", "AI", etc. are ignored when matching.
+Amazon
+Google
+Microsoft
+Meta
+Apple
+Netflix
+Nvidia
+Salesforce
+Oracle
+IBM
+Intel
+Adobe
+Cisco
+Qualcomm
+Uber
+Lyft
+Airbnb
+Stripe
+Databricks
+Snowflake
+Anthropic
+OpenAI
+Scale AI
+Cohere
+Palantir
+Datadog
+Cloudflare
+MongoDB
+Elastic
+Twilio
+Robinhood
+Coinbase
+DoorDash
+Instacart
+Pinterest
+Reddit
+Roblox
+Dropbox
+Figma
+Notion
+Ramp
+Brex
+Plaid
+Affirm
+Chime
+Samsara
+Okta
+ServiceNow
+Workday
+Intuit
+PayPal
+Block
+Square
+LinkedIn
+Spotify
+Walmart
+Capital One
+JPMorgan Chase
+Goldman Sachs
+Morgan Stanley
+Bloomberg
+Two Sigma
+Citadel
+Deloitte
+Accenture
+Cognizant
+Infosys
+Tata Consultancy Services
+Wipro
+HCL America
+Capgemini
+EPAM Systems
+Mastercard
+Visa
+American Express
+Centene
+Mastercard
+Edward Jones
+World Wide Technology
+Enterprise Holdings
+Bayer
+Boeing
+Anheuser-Busch
+Cerner
+Oracle Health
+Perplexity
+Glean
+Together AI
+Hugging Face
+Duolingo
+Grammarly
+Toast
+Zoox
+Nuro
+Cruise
+Waymo
+Tesla
+Rivian
+Mistral
