@@ -1,0 +1,8 @@
+reports/
+resumes/
+data/seen.sqlite
+data/*.csv
+__pycache__/
+.pytest_cache/
+.venv/
+.env

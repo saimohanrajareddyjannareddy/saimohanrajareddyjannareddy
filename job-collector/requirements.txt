@@ -1,0 +1,5 @@
+requests>=2.31
+PyYAML>=6.0
+pypdf>=4.0          # PDF resumes
+python-docx>=1.1    # DOCX resumes (optional)
+# python-jobspy     # optional: LinkedIn/Indeed/Glassdoor scraping (against their ToS)
